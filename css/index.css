@@ -1,0 +1,205 @@
+body, .mananger > div > h4
+{
+    margin: 0;
+}
+
+.bg-content
+{
+    padding: 200px 0;
+}
+
+.bg-content, .button
+{
+    background-color: hsl(210, 46%, 95%);
+}
+
+.content, .mananger
+{
+    display: flex;
+}
+
+.content
+{
+    max-width: 700px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.left-content
+{
+    width: 40%;
+    background-image: url(/images/drawers.jpg);
+    background-size: 340px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.left-content, .button > div
+{
+    background-repeat: no-repeat;
+}
+
+.right-content
+{
+    width: 60%;
+    margin: 5px 40px;
+}
+
+.mananger
+{
+    position: relative;
+    margin: 20px 0;
+}
+
+.mananger > img, .button
+{
+    border-radius: 50px;
+    height: 40px;
+}
+
+.infor
+{
+    padding-left: 15px;
+}
+
+.infor > p, .right-content > p
+{
+    margin: 5px 0;
+    color: hsl(212, 23%, 69%);
+}
+
+.share
+{
+    right: -100px;
+    background-color: hsl(217, 19%, 35%);
+    z-index: 1;
+    top: -70px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color:  hsl(212, 23%, 69%);
+    display: none;
+}
+
+.share > p
+{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 5px;  
+    padding-right: 10px;
+}
+
+.icon
+{
+    letter-spacing: 10px;
+    padding: 2px 0;
+    position: relative;
+}
+
+.button
+{
+    right: 0;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.button > div
+{
+    background-image: url(/images/icon-share.svg);
+    height: 20px;
+    background-size: contain;
+    background-position: center;
+    margin: 8px;
+}
+
+.button:hover > div
+{
+    filter: brightness(3);
+}
+
+.right-content > h2, .infor > h4
+{
+    color: hsl(217, 19%, 35%);
+}
+
+.arrow-down
+{
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid hsl(217, 19%, 35%);
+    left: -15px;
+    bottom: -22px;
+}
+
+.arrow-down, .button, .share
+{
+    position: absolute;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .bg-content
+    {
+        padding: 50px 0;
+    }
+
+    .content
+    {
+        display: block;
+        max-width: 400px;
+    }       
+
+    .left-content
+    {
+        height: 270px;
+        width: 100%;
+        background-size: cover;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+    }
+
+    .right-content
+    {
+        width: 80%;
+        margin: 5px auto;
+        padding-bottom: 5px;
+    }
+
+    .share
+    {
+        top:0;
+        right: 0;
+        left: -40px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        width: 100%;
+        padding: 20px 40px;
+    }
+
+    .share > p
+    {
+        font-size: 16px;
+    }
+
+    .icon
+    {
+        letter-spacing: 20px;
+    }
+
+    .icon > a > img
+    {
+        height: 25px;
+    }
+
+    .arrow-down
+    {
+        display: none;
+    }
+}
